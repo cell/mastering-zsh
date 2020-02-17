@@ -11,7 +11,7 @@ Functions can:
 * have error codes and traps
 
 Functions are a building block for a lot of zsh.
-Two major aspects of zsh are ( widgets )[widgets.md] and (../config/hooks)[hooks.md] which are both uses of functions.
+Two major aspects of zsh are [widgets](widgets.md) and [hooks](../config/hooks.md) which are both uses of functions.
 
 We'll only show some basics and examples here because it's assumed you know how create shell functions.
 
@@ -157,4 +157,4 @@ matrix() { echo -e "\e[1;40m" ; clear ; while :; do echo $LINES $COLUMNS $(( $RA
 
 ---
 
-[home](../../README.md)
+Previous: [variables](variables.md) | [home](../../README.md) | Next: [widgets](widgets.md)

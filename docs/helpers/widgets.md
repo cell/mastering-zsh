@@ -7,7 +7,7 @@ There are built in widgets for a majority of shell functionality and you can hav
 User widgets are used by binding them to keyboard shortcuts using the `bindkey` command.
 More about defining widgets can be found in the zle section.
 
-Widgets have descriptive names such as `vi-backward-kill-word` and `biginning-of-history`.
+Widgets have descriptive names such as `vi-backward-kill-word` and `beginning-of-history`.
 User defined widgets have no standard naming convention but you should stick with something meaningful for troubleshooting if things go wrong.
 
 You can list all available widgets with
@@ -15,15 +15,14 @@ You can list all available widgets with
 zle -al
 ```
 
-If you want to list your current keybindings and widgets use.
-
-```bash
-bindkey
-```
+If you want to list your current keybindings and widgets use the `bindkey` command by itself.
+To see a list of bindings and a command you can run to set the key binding in your `.zshrc` file use `bindkey -L`
 
 The widgets with `.` at the begining of the name are read-only system widgets that cannot be changed.
 
 An example of binding a built in widget to a keyboard shortcut is
+
+> When you bind a key to a widget any previous key binding will be overridden.
 
 ```bash
 bindkey '^a' begining-of-line
@@ -146,4 +145,4 @@ If you want to get really fancy you can check out [`tetriscurses`](https://githu
 
 ---
 
-[home](../../README.md)
+Previous: [functions](functions.md) | [home](../../README.md) | Next: [completions](completions.md)

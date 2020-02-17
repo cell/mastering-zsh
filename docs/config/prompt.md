@@ -1,6 +1,6 @@
 # Prompt
 
-You're terminal prompt is your best guide to passive productivity gains.
+Your terminal prompt is your best guide to passive productivity gains.
 It's also a very opinionated part of any shell.
 Some people like multiple lines.
 Some people love minimal prompts without distractions.
@@ -94,4 +94,4 @@ Follow the instructions above to load the prompt in your `.zshrc` file.
 
 ---
 
-[home](../../README.md)
+Previous: [history](history.md) | [home](../../README.md) | Next: [hooks](hooks.md)

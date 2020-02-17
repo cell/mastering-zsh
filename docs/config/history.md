@@ -1,6 +1,6 @@
 # History
 
-If you work in the shell long enough your history will become be your own personal reference.
+If you work in the shell long enough your history will become your own personal reference.
 It's like automatic documentation which is the best kind of documentation.
 
 ## Configuration
@@ -32,6 +32,7 @@ For most people working with history means using `sudo !!` or occationally `ctrl
 To master working with your history we should look at a few other commonly used shortcuts instead.
 First of all, you should know `!!` is essentially the same as
 ```bash
+# Note: this doesn't actually work but the fc command is effectively the same
 alias !!='fc -ln -1'
 ```
 _More on `fc` later_
@@ -51,7 +52,7 @@ If you want to use words from commands earlier in your history you can also use 
 * `!-2; !-1` = Combine last two commands into a single line
 
 You can also make this better with `bindkey` and the insert-last-word zle widget.
-More on what this means can be found in the (widgets section)[../helpers/widgets.md].
+More on what this means can be found in the [widgets section](../helpers/widgets.md).
 
 ```bash
 # press Alt+. to insert the last word from the previous command
@@ -110,7 +111,7 @@ fc
 ![](../../img/fc-example.gif)
 
 For global string replacement you can use `string=replace` syntax.
-If you want to run the command with using an editor override `$EDITOR` with `-e -`.
+If you want to run the command without using an editor override `$EDITOR` with `-e -`.
 
 ```bash
 echo foo bar baz foo
@@ -208,4 +209,4 @@ function fh() {
 
 ---
 
-[home](../../README.md)
+Previous: [general](general.md) | [home](../../README.md) | Next: [prompt](prompt.md)
